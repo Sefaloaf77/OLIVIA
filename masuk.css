@@ -1,7 +1,19 @@
+p,
+h4,
+h3,
+a,
+label {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Epilogue", sans-serif;
+}
 .btn {
   border-radius: 50px;
   background-color: #00b43c;
   padding: 8px 22px;
+  font-family: "Nunito", sans-serif;
 }
 .btn:hover {
   background-color: #036451;
