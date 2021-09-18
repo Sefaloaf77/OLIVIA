@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="konter.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <script src="https://kit.fontawesome.com/ff889e85ca.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>konter</title>
+  </head>
+  <body>
+    <div class="container counter-section">
+      <div class="row text-center">
+        <div class="col-md-3 counter-box">
+          <div class="icon-box">
+            <i class="fas fa-search"></i>
+          </div>
+          <p class="counter">150</p>
+          <p>Projects</p>
+        </div>
+        <div class="col-md-3 counter-box">
+          <div class="icon-box">
+            <i class="fas fa-users"></i>
+          </div>
+          <p class="counter">980</p>
+          <p>User</p>
+        </div>
+        <div class="col-md-3 counter-box">
+          <div class="icon-box">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <p class="counter">520</p>
+          <p>achievement</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- counter -->
+    <script src="jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1000,
+        });
+      });
+    </script>
+  </body>
+</html>
