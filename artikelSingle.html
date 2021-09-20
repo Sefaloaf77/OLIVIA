@@ -59,7 +59,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <div class="navbar-nav mx-auto">
-              <a class="nav-link beranda {{ ($active === 'home') ? 'active' : '' }}" data-spy="scroll" style="padding-right: 30px" href="/">Beranda</a>
+              <a class="nav-link beranda" data-spy="scroll" style="padding-right: 30px" href="/">Beranda</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle {{ ($active === 'about') ? 'active' : '' }}" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="padding-right: 30px">Tentang Kami</a>
                 <ul class="dropdown-menu" style="background-color: #00b3bc">
@@ -68,15 +68,15 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle {{ ($active === 'layanan') ? 'active' : '' }}" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="padding-right: 30px">Layanan</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="padding-right: 30px">Layanan</a>
                 <ul class="dropdown-menu" style="background-color: #00b3bc">
                   <li><a class="dropdown-item" href="#">Layanan Setor</a></li>
                   <li><a class="dropdown-item" href="#">Layanan Kurir</a></li>
                   <li><a class="dropdown-item" href="#">Layanan Mitra</a></li>
                 </ul>
               </li>
-              <a class="nav-link artikel {{ ($active === 'artikel') ? 'active' : '' }}" data-spy="scroll" style="padding-right: 30px" href="/artikel">Artikel</a>
-              <a class="nav-link faq {{ ($active === 'faq') ? 'active' : '' }}" data-spy="scroll" style="padding-right: 30px" href="/faq">FAQ</a>
+              <a class="nav-link artikel active" data-spy="scroll" style="padding-right: 30px" href="/artikel">Artikel</a>
+              <a class="nav-link faq" data-spy="scroll" style="padding-right: 30px" href="/faq">FAQ</a>
             </div>
             <a class="btn text-white" href="/login" tabindex="-1" aria-disabled="true">Masuk</a>
           </div>
@@ -89,9 +89,9 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h1 class="mb-2">{{ $title }}</h1>
-                    <p class="text-muted">post by : {{ $artikel->user->name }} {{ $artikel->created_at->diffForHumans() }}</p>
-                    <img src="https://source.unsplash.com/1200x400?{{ $artikel->category->name }}" class="img-fluid mb-4" alt="{{ $artikel->category->name }}">
-                    <p>{!! $artikel->body !!}</p>
+                    <p class="text-muted">post by : Ria Sq 5 Hour ago</p>
+                    <img src="https://source.unsplash.com/1200x400?floral" class="img-fluid mb-4" alt="floral">
+                    <p>Loremipsum dolor sit amet blablalbalbalblablalbalblablalblablalbalblalblab</p>
                     <a href="/artikel" class="mb-5 pb-5">Kembali</a>
                 </div>
             </div>
