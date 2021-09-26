@@ -32,6 +32,9 @@ h2 {
 .header {
   color: #00b3bc;
 }
+a {
+  color: #036451;
+}
 
 @media (min-width: 992px) {
   .kanan {
@@ -39,5 +42,6 @@ h2 {
   }
   body {
     overflow: hidden;
+    margin-top: 80px;
   }
 }
