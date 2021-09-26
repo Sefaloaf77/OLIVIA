@@ -25,7 +25,8 @@
 
     <title>Daftar | SAGA</title>
   </head>
-  <body class="fluid">
+  <body class="fluid" onload="myFunction()">
+    <div id="loading"></div>
     <div class="container mt-4">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-12 kiri">
@@ -98,6 +99,13 @@
       AOS.init({
         once: true, duration: 1500,offset: 250,
       });
+    </script>
+    <!-- loading -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function myFunction() {
+        preloader.style.display = "none";
+      }
     </script>
 
     <!-- javasript -->
