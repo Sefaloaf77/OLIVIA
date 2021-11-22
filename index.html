@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- counter -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/ff889e85ca.js" crossorigin="anonymous"></script>
+
+    <title>SAGA | Sampah Juga Berharga</title>
+  </head>
+  <body class="bg-white" onload="myFunction()">
+    <div id="loading"></div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 sticky-top">
+      <div class="container">
+        <div>
+          <img style="width: 30px; height: 30px; margin-right: 10px" src="img/LOGO.png" alt="Logo" />
+        </div>
+        <a class="navbar-brand" href="#home">SAGA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active beranda" data-spy="scroll" style="padding-right: 30px" href="index.html">Beranda</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="padding-right: 30px">Tentang Kami</a>
+              <ul class="dropdown-menu" style="background-color: #00b3bc">
+                <li><a class="dropdown-item" href="#">Tentang SAGA</a></li>
+                <li><a class="dropdown-item" href="ttgtim.html">Tentang Tim</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="padding-right: 30px">Layanan</a>
+              <ul class="dropdown-menu" style="background-color: #00b3bc">
+                <li><a class="dropdown-item" href="#">Layanan Setor</a></li>
+                <li><a class="dropdown-item" href="#">Layanan Kurir</a></li>
+                <li><a class="dropdown-item" href="#">Layanan Mitra</a></li>
+              </ul>
+            </li>
+            <a class="nav-link active artikel" data-spy="scroll" style="padding-right: 30px" href="artikel1.html">Artikel</a>
+            <a class="nav-link active faq" data-spy="scroll" style="padding-right: 30px" href="faq.html">FAQ</a>
+          </div>
+          <a class="btn text-white" href="masuk.html" tabindex="-1" aria-disabled="true">Masuk</a>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- jumbotrom -->
+    <div class="jumbotron">
+      <div class="container py-4">
+        <div class="row align-items-md-stretch">
+          <div class="col-md-7 konten">
+            <div class="p-5 text-dark rounded-3">
+              <h1 class="display-2" style="color: #00b3bc;">SAGA</h1>
+              <h2>Sampah Juga Berharga</h2>
+              <p>
+                SAGA merupakan platform manajemen kelola sampah yang terintegrasi untuk mendukung penerapan gerakan "Sampah Juga Berharga" di daerah Malang Raya 
+              </p>
+              <div class="d-flex flex-row bd-highlight mb-3">
+                <button class="btn text-white" type="button">Yuk Mulai</button>
+                <div class="ms-3">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control search-input float-left shadow-sm"
+                      style="border-radius: 30px 0px 0px 30px; height: 43px; border-right: none;font-family: 'Nunito', sans-serif;"
+                      placeholder="  Cari tahu disini..."
+                      aria-label="Cari tahu disini"
+                      aria-describedby="basic-addon1"
+                    />
+                    <button class="input-group-text shadow-sm" style="border-radius: 0px 30px 30px 0px; background-color: white; border-left: none; color: rgb(163, 162, 162)" id="basic-addon1"><i class="fas fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir jumbrotron -->
+    <!-- info panel -->
+    <section class="container" id="data-statistik">
+      <div class="row info-panel" data-aos="fade-up" data-aos-offset="250">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 counter-up">
+          <div class="row content">
+            <div class="col-12 col-md-4 col-sm-12 col-lg-4 box">
+              <div class="icon">Bergabung</div>
+              <div class="counter">724</div>
+              <div class="text">Pengguna</div>
+            </div>
+            <div class=" col-12 col-md-4 col-sm-12 col-lg-4 box tengah">
+              <div class="icon">Sampah Diantar</div>
+              <div class="counter">508</div>
+              <div class="text">Kilogram</div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12 col-lg-4 box batas">
+              <div class="icon">Tenaga Kerja</div>
+              <div class="counter">436</div>
+              <div class="text">Orang</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-12 col-sm-12 col-lg-6 testimoni align-items-center mt-4">
+          <section class="container-fluid text-white">
+            <div class="row slider">
+              <div class="col-md-12 d-flex mt-4 align-items-center">
+                <div class="avatar">
+                  <img src="img/beranda/avatar1.png" />
+                </div>
+                <div style="margin-left: 10px;">
+                  <h4>Testimoni</h4>
+                  <p><strong>"</strong>Selain membantu mengatasi permasalahan lingkungan, SAGA juga telah meningkatkan perekonomian pelaku UMKM seperti saya.<strong>"</strong></p>
+                  <h5>Putri Sulistyowati</h5>
+                </div>
+              </div>
+              <div class="col-md-12 d-flex mt-4 align-items-center">
+                <div class="avatar">
+                  <img src="img/beranda/avatar2.png"/>
+                </div>
+                <div style="margin-left: 10px; padding-right: 5px;">
+                  <h4>Testimoni</h4>
+                  <p>
+                    <strong>"</strong>SAGA top banget deh. Saya tidak ragu untuk merekomendasikan web ini kepada kerabat saya. <strong>"</strong>
+                  </p>
+                  <h5>Sugeng Riyanto</h5>
+                </div>
+              </div>
+              <div class="col-md-12 d-flex mt-4 align-items-center">
+                <div class="avatar">
+                  <img src="img/beranda/avatar1.png"/>
+                </div>
+                <div style="margin-left: 10px;">
+                  <h4>Testimoni</h4>
+                  <p><strong>"</strong>SAGA sangat berguna untuk mahasiswa seperti saya. Aksesnya mudah serta prosesnya cepat. Sukses terus SAGA<strong>"</strong></p>
+                  <h5>Nadhia Atmaja</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- akhir info panel -->
+
+    <!-- tentang saga -->
+    <div id="kenalin">
+      <a href="#" class="mt-sm-4 mt-md-4 text-center" style="text-decoration: none"><i class="fas fa-dot-circle me-2" style="color: #00b3bc;"></i>Bagaimana kami bergerak</a>
+      <h1 class="mt-3">Ini loh! SAGA.<br />Solusi mudah kelola sampah</h1>
+      <button class="btn text-light">Tentang SAGA</button>
+    </div>
+    <!-- akhir tentang saga -->
+
+    <!-- Layanan card -->
+    <section id="layanan">
+      <div class="container">
+        <div class="row justify-content-evenly" data-aos="zoom-in-up">
+          <div class="col-md-4 col-lg-3 mb-3">
+            <div class="card shadow" style="background-color: #cef2eb">
+              <img src="img/beranda/card-1.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h2>Sobat SAGA</h2>
+                <p class="card-text">Penyetor atau Sobat SAGA adalah bagian dari SAGA yang berperan sebagai pengirim sampah kepada <span style="color: #00b43c;">pihak Kolega</span></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-3">
+            <div class="card shadow">
+              <img src="img/beranda/card-2.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h2>Kurir</h2>
+                <p class="card-text">Kurir atau Partner SAGA adalah bagian dari SAGA yang berperan sebagai penghubung antara Sobat SAGA dengan Kolega.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-3">
+            <div class="card shadow" style="background-color: #cef2eb">
+              <img src="img/beranda/card-3.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h2>Kolega</h2>
+                <p class="card-text">Kolega adalah bagian dari SAGA yang akan menerima, mengolah, dan juga memasarkan sampah yang telah disetorkan oleh <span style="color: #00b43c;">Sobat SAGA</span>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir layanan card -->
+    <!-- perubahan -->
+    <section id="perubahan">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-7 fakta">
+            <div class="row row-cols-2 pe-md-5">
+              <div class="col pb-3 mb-2">
+                <img src="img/beranda/daur.png" style="float: left;margin-right: 25px;" alt="Bumi" />
+                <p>Meningkatkan kesadaran dalam pengelolahan sampah dengan mengimplementasikan 3R.</p>
+              </div>
+              <div class="col pb-3 mb-2">
+                <img src="img/beranda/world.png" style="float: left;margin-right: 25px;" alt="Bumi" />
+                <p>Membangun ekonomi hijau dan menciptakan regenerasi sistem alam.</p>
+              </div>
+              <div class="col pb-3 mb-2">
+                <img src="img/beranda/invest.png" style="float: left;margin-right: 25px;" alt="Bumi" />
+                <p>Meningkatkan daya saing dan menciptakan lapangan pekerjaan berbasis ekonomi sirkular.</p>
+              </div>
+              <div class="col pb-3 mb-2">
+                <img src="img/beranda/masker.png" style="float: left;margin-right: 25px;" alt="Bumi" />
+                <p>Membantu mengatasi permasalahan lingkungan di masa pandemi covid-19.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm keterangan">
+            <a class="pb-1 mt-5 mt-sm-4 mt-md-4" style="text-decoration: none"><i class="fas fa-dot-circle me-2" style="color: #00b3bc;"></i>Bagaimana kami bergerak</a>
+            <h2 class="mt-3">Ikuti langkah kami dan menjadi lebih baik bersama SAGA!</h2>
+            <p>Bergabung bersama SAGA, dan jadilah bagian dari perubahan baik</p>
+            <a href="setor.html" style="text-decoration: none">Kunjungi ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir perubahan -->
+    <!-- second CTA -->
+    <div class="container text-white" id="second-cta">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-sm-12 kiri">
+          <h2>Lindungi bumi kita<br />dengan Gerakan Sampah Juga Berharga</h2>
+          <p>Gerakan Sampah Juga Berharga adalah suatu gerakan untuk mengajak kalian mengelola sampah dengan tujuan menciptakan kondisi regenerasi alam yang lebih baik.</p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="yukmulai" style="text-align: center;">
+            <img src="img/beranda/yukmulai.png" class="" alt="yukmulai">
+            <button class="btn text-white" style="margin-top: -50px;">Yuk mulai</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir second CTA -->
+
+    <!-- form -->
+    <section id="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right">
+            <img src="img/beranda/form.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col mt-3"  data-aos="fade-left">
+            <a style="text-decoration: none"><i class="fas fa-dot-circle me-2" style="color: #00b3bc;"></i>Bagaimana kami bergerak</a>
+            <h2 class="mt-3">Ada kritik, saran, atau masukan? <br>Yuk kirim sekarang!</h2>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput2" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis komentarmu disini"></textarea>
+            </div>
+            <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
+            <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body text-center">
+                      <img src="img/beranda/checked.png" alt="checked">
+                      <h3 style="margin-top: 30px;">Terima Kasih</h3>
+                      <p class="text-center">Pesanmu sudah terkirim</p>
+                      <button type="button" class="btn text-white" data-bs-dismiss="modal" style="margin-top: 15px;">Oke</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir form -->
+
+    <!-- footer -->
+    <section id="footer" style="background-color: #f9f9f9">
+      <footer class="bg-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+          <div class="row text-center text-md-start">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <img src="img/avatar1.png" alt="logo" style="width: 60px; height: 60px; margin-bottom: 20px; float: left;">
+              <h5 class="font-weight-bold">SAGA</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae possum consectetur soluta error blanditiis doloribus consequuntur.</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="mb-4 font-weight-bold">Halaman</h5>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Beranda</a>
+              </p>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Tentang</a>
+              </p>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Toko</a>
+              </p>
+              <p>
+                <a href="artikel1.html" class="text-black" style="text-decoration: none">Artikel</a>
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="mb-4 font-weight-bold">Layanan</h5>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Sobat SAGA</a>
+              </p>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Kurir</a>
+              </p>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Kolega</a>
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="mb-4 font-weight-bold">Hubungi Kami</h5>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Tim SAGA</a>
+              </p>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Bantuan</a>
+              </p>
+              <p>
+                <a href="#" class="text-black" style="text-decoration: none">Kontak</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div class="d-flex justify-content-between">
+                <h5>Yuk temui kami!</h5>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3">
+                    <a class="link-dark" href="https://www.instagram.com/sagavokasiub/"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="ms-3">
+                    <a class="link-dark" href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="maps">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.555712662921!2d112.59562387727576!3d-7.958698157183726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78836564ffe905%3A0xa23e714224e7efe3!2sGedung%20Pendidikan%20Vokasi%20Universitas%20Brawijaya!5e0!3m2!1sid!2sid!4v1631467321277!5m2!1sid!2sid"
+                  width="100%"
+                  height="160px"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4" />
+          <div class="row col-md-7 col-lg-8">
+            <p>
+              Copyright &copy;2021 All right reserved by <a href="#" style="text-decoration: none;"><strong>SAGA</strong></a>
+              Vokasi UB.
+            </p>
+          </div>
+        </div>
+      </footer>
+        </footer>
+      </div>
+    </section>
+    <!-- akhir footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, duration: 1500,offset: 250,
+      });
+    </script>
+  
+    <!-- counter -->
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1000,
+        });
+      });
+    </script>
+    <!-- slide -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(".slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+  <!-- loading -->
+  <script>
+    var preloader = document.getElementById("loading");
+    function myFunction() {
+      preloader.style.display = "none";
+    }
+   </script>
+    <script type="text/javascript">
+  //     function togglePopup(){
+  //       document.getElementById("popup-1").classList.toggle("active");
+  //     }
+  //   </script>
+  </body>
+</html>
